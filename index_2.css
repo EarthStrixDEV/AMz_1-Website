@@ -1,0 +1,33 @@
+h1.head-name
+{
+    color : white;
+}
+
+div.descr-con1 
+{
+    background-image:url('https://wallpaperaccess.com/full/1355375.jpg');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width : auto;
+    height : 600px;
+}
+
+img#amz1-logo
+{
+    float : left;
+}
+
+p.descr-text-con1
+{
+    font-family: prompt;
+    color : white;
+    font-style: normal;
+    text-shadow: 5px 6px 7px black;
+    max-width: 70ch;
+    padding: 5.5em 3em;
+    margin:auto;
+    line-height: 2;
+    font-size: 1.25em;
+}
+
