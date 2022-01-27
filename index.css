@@ -1,127 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Flamenco&family=Goldman&family=Play&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-
-
-* 
-{
-  font-size: 28px;
-  box-sizing: border-box;
-}
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Flamenco&family=Goldman&family=Play&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Be+Vietnam+Pro:wght@900&display=swap');
 
 /*    Text     */
-
-h1.header-name 
-{
-  font-family: 'prompt';
-  font-weight: bolder;
-  font-size:2em;
-  text-align: center;
-  color: black;
-  text-shadow: 7px 5px #e9e9e9;
-}
-
-
-p.text-paragraph 
-{
-  font-size: 30px;
-  font-family: 'Itim', cursive;
-  text-align: center;
-  color: black;
-}
-
-p.name-logo
-{
-  font-weight: bold;
-  font-family: 'Goldman',
-  cursive;
-  text-align: center;
-}
-
-h2.text-head 
-{
-  text-align: center;
-  border: dashed;
-  border-radius: 5px;
-  border-width: 3px;
-  border-style: solid;
-  background-image: url(https://cdn.shopify.com/s/files/1/1003/7610/products/Dark_wood_texture_Wall_Mural_Wallpaper_a_700x.jpg?v=1578614228);
-  color: white;
-  font-family: 'Itim',
-  cursive;
-  border-color: black;
-  text-shadow: 5px 3px black;
+* {
+  box-sizing: border-box;
+  margin:auto;
 }
 
 /*  navbar  */
 
-ul 
-{
+ul {
   list-style-type: none;
-  background-color:#e9e9e9;
+  background-color: black;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  line-height: 2.2em;
 }
 
-form.search-text,
-input.input-text
-::placeholder
-{
-  padding: -1em;
-  border-color:#e9e9e9;
-}
 
-li 
-{
+li {
   counter-reset: none;
   display: inline;
-  margin: 0;
-  line-height: 2.2;
 }
 
-a 
-{
+a.nav-header {
   text-decoration: none;
-  font-family: 'Goldman';
+  font-family: 'Archivo Black', sans-serif;
+  color: white;
+  padding: 2%;
+}
+
+a.nav-header:hover {
   color: black;
-  padding: 2.0%;
+  border: white solid 0;
+  background-color: white;
 }
 
-a:hover 
-{
-  color : white;
-  border: black solid 0 ;
-  background-color: black;
-}
-
-a:active 
-{
+a.nav-header:active {
   text-decoration-style: underline;
   text-decoration-color: white;
 }
 
-button
-{
+button {
   appearance: button;
   backface-visibility: hidden;
   background-color: #405cf5;
   border-radius: 4px;
   border-width: 0;
-  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,
-  rgba(50, 50, 93, .1) 0 2px 5px 0,
-  rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  font-family: -apple-system,
-  system-ui,
-  "Segoe UI",
-  Roboto,
-  "Helvetica Neue",
-  Ubuntu,
-  sans-serif;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    Ubuntu, sans-serif;
   font-size: 100%;
   height: 44px;
   line-height: 0;
@@ -132,8 +69,7 @@ button
   text-align: center;
   text-transform: none;
   transform: translateZ(0);
-  transition: all .2s,
-  box-shadow .08s ease-in;
+  transition: all 0.2s, box-shadow 0.08s ease-in;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -146,11 +82,12 @@ button:hover {
 }
 
 button:focus {
-  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0,
+    rgba(50, 151, 211, 0.3) 0 0 0 4px;
 }
 
-button:active 
-{
+button:active {
   background-color: white;
   color: black;
 }
@@ -159,116 +96,35 @@ button:disabled {
   cursor: default;
 }
 
-input.input-text 
-{
-  padding: 5px;
-  margin: 5px;
-  width: 30em;
-  height: 45px;
-  text-align: left;
-  align-self: center;
-  border: none;
-}
 
-input.input-text:hover 
-{
+input.input-text:hover {
   box-shadow: inset;
 }
 
-/* block container */
+/*  footer  */
 
-div.text-container 
-{
-  width: 90%;
-  margin: 50px auto;
-  background-color: white;
-}
-
-div.text-box 
-{
-  border: solid 1px;
-  padding: 10px;
-  margin-bottom: 17px;
-  background-image: url(https://wallpaperaccess.com/full/2797527.jpg);
-}
-
-div.box-skill-container 
-{
-  display : inline-block;
-  padding-left: 7.5px;
-  padding-right: 7.5px;
-  text-align: center;
-  align-content: center;
-}
-
-/*    img     */
-
-img#img-python 
-{
-  margin-top: 18px;
-  padding-top : 20px;
-}
-
-img#img-cpp
-{
-  width: 3em;
-  margin-left: 20%;
-}
-
-img#img-java 
-{
-  width: 2.5em;
-}
-
-img#img-javascript 
-{
-  width : 3.2em;
-}
-
-img#img-html
-{
-  width : 3.0em;
-}
-
-img#img-css
-{
-  width : 2.65em;
-}
-
-#box-skill 
-{
-  float: right;
-  width: 45%;
-  padding: 50px;
-  margin-top: 30px;
-}
-
-#box-intro 
-{
-  float: left;
-  width: 40%;
-  padding: 25px;
-  padding-bottom: auto;
-}
-
-/* button-style */
-
-#box-edu 
-{
-  float: right;
-  width: 45%;
-  padding: 25px;
-  padding-bottom: auto;
-}
-
-span.img-logo 
-{
+span.img-logo {
   border: dashed 10px;
   background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.picpng.com%2Flanguage-logo-python-png-44976&psig=AOvVaw27FVVGcUm4IBi1i0SX6zsw&ust=1638507433636000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLjs1_-pxPQCFQAAAAAdAAAAABAP);
 }
 
-body
+h3.footer-data-credit
 {
-  margin:auto;
+  color : white;
 }
 
+footer.footer-data
+{
+  padding: 2rem 2rem;
+  background-color: black;
+}
+
+html,
+body {
+  background-image:url('https://wallpaperaccess.com/full/1355375.jpg');
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width : 100%;
+}

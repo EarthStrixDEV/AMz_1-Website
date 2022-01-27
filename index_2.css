@@ -1,33 +1,52 @@
-h1.head-name
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@900&display=swap');
+@import url('http://fonts.cdnfonts.com/css/ds-digital');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+/*  Main Container */
+
+.header-contain-show
 {
-    color : white;
+    justify-content:space-around;
+    display:flex;
+    margin: 7rem;
 }
 
-div.descr-con1 
+p#text-caption-p
 {
-    background-image:url('https://wallpaperaccess.com/full/1355375.jpg');
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width : auto;
-    height : 600px;
+    font-size:1.5em;
+    color:white;
+    text-shadow: 3px 3px 5px black;
+    line-height:2;
+    font-family: 'Allerta Stencil', sans-serif;
 }
 
-img#amz1-logo
+img#img-logo-amz1
 {
-    float : left;
+    max-width: 30em;
+}
+/*  div 2  */
+
+.header-con2
+{
+    background-color: black;
+    margin: auto;
+    padding:10rem;
+    width :100%;
 }
 
-p.descr-text-con1
+img#photo-logo-amz1
 {
-    font-family: prompt;
-    color : white;
-    font-style: normal;
-    text-shadow: 5px 6px 7px black;
-    max-width: 70ch;
-    padding: 5.5em 3em;
-    margin:auto;
-    line-height: 2;
-    font-size: 1.25em;
+    width : 100%;
+    height: auto;
 }
+
+h1#amz1_name 
+{
+    color: white;
+    font-size: 10rem;
+    text-align: center;
+    justify-content: center;
+    font-family: 'DS-Digital', sans-serif;
+}
+
 
