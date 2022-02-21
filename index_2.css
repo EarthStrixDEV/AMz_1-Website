@@ -8,7 +8,12 @@
 {
     justify-content:space-around;
     display:flex;
-    margin: 7rem;
+    margin: 10rem;
+    margin-bottom: 15rem;
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 4rem;
+    background-color: rgba(0, 0, 0, 0.20);
 }
 
 p#text-caption-p
@@ -30,7 +35,7 @@ img#img-logo-amz1
 {
     background-color: black;
     margin: auto;
-    padding:10rem;
+    padding:5rem;
     width :100%;
 }
 

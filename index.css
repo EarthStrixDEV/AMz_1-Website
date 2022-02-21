@@ -15,7 +15,7 @@
 
 ul {
   list-style-type: none;
-  background-color: black;
+  background-color: rgb(36, 36, 36);
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -30,9 +30,10 @@ li {
 
 a.nav-header {
   text-decoration: none;
-  font-family: 'Archivo Black', sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: white;
   padding: 2%;
+  font-size: 20px;
 }
 
 a.nav-header:hover {
@@ -44,6 +45,12 @@ a.nav-header:hover {
 a.nav-header:active {
   text-decoration-style: underline;
   text-decoration-color: white;
+}
+
+input.input-text {
+  padding:10px;
+  padding-left: 20px;
+  margin: 10px;  
 }
 
 button {
@@ -108,20 +115,23 @@ span.img-logo {
   background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.picpng.com%2Flanguage-logo-python-png-44976&psig=AOvVaw27FVVGcUm4IBi1i0SX6zsw&ust=1638507433636000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLjs1_-pxPQCFQAAAAAdAAAAABAP);
 }
 
-h3.footer-data-credit
+h3
 {
   color : white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 50px;
+  font-size: 21px;
 }
 
 footer.footer-data
 {
   padding: 2rem 2rem;
-  background-color: black;
+  background-color: rgb(36, 36, 36);
 }
 
 html,
 body {
-  background-image:url('https://wallpaperaccess.com/full/1355375.jpg');
+  background-image:url('https://wallpaperaccess.com/full/767351.jpg');
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
