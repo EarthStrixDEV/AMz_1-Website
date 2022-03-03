@@ -7,20 +7,13 @@ var element_nav = {
   footer_font_h3: document.querySelector('h3'),
   h1: document.getElementById("amz1_name"),
   h1_background_div: document.querySelector(".header-con2"),
-  h1_background_span: document.querySelector(".header-name-con2"),
+  h1_background_span: document.querySelector(".header-name-con2")
 };
 
 var console_log = {
   log_1: console.log(element_nav.footer_font),
   log_2: console.log(element_nav.h1_background_div),
-  log_3: console.log(element_nav.h1_background_span),
-  log_data: function() {
-    console.log(this.log_1);
-  },
-  log_data_2: function() {
-    console.log(this.log_2);
-    console.log(this.log_3);
-  }
+  log_3: console.log(element_nav.h1_background_span)
 };
 
 //Function Control
@@ -52,4 +45,8 @@ function theme() {
 function welcome()
 {
   alert("Welcome to AMz_1🎮🚀");
+}
+
+function loadData() {
+  return null;
 }
