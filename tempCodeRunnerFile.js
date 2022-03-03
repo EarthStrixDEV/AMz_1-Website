@@ -1,1 +1,1 @@
-auto_darkmode
+nt_footer_font_control);
