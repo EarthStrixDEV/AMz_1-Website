@@ -39,8 +39,7 @@ const theme = () => {
   }
 }
 
-const welcome = () => 
-{
+const welcome = () => {
   alert("Welcome to AMz_1🎮🚀");
 }
 

@@ -58,6 +58,11 @@
   text-decoration-color: white;
 }
 
+#logo-home-nav {
+  width: 60px;
+  margin: 0;
+}
+
 #input-text {
   padding-left: 20px;
   padding-right: 20px;

@@ -17,12 +17,10 @@
     border-radius: 40px;
     margin: 100px;
     overflow: hidden;
-    transition-property: box-shadow;
-    transition-duration: 0.25s;
-    transition-timing-function: ease-in-out;
+    transition: box-shadow 0.25s ease-in-out;
 }
 .box:hover {
-    box-shadow:4px 4px 10px rgba(0, 0, 0, 0.267);
+    box-shadow:4px 4px 12px rgba(24, 24, 24, 0.356);
 }
 
 .img-box {
