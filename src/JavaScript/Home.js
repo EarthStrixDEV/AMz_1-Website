@@ -43,3 +43,12 @@ const welcome = () => {
   alert("Welcome to AMz_1🎮🚀");
 }
 
+const timeServer = () =>
+{
+  let time_req = new Date();
+  let res_log_date = time_req.toLocaleDateString();
+  let res_log_time = time_req.toLocaleTimeString();
+  console.log(`${ res_log_date } | ${ res_log_time }`);
+  console.log("Server is working...");
+}
+

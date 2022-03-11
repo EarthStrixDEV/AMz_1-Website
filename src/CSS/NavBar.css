@@ -5,17 +5,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Be+Vietnam+Pro:wght@900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@900&display=swap');
-@import url('http://fonts.cdnfonts.com/css/ds-digital');
+@import url('https://fonts.cdnfonts.com/css/ds-digital');
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
 
-/*    Text     */
+/*  navbar  */
 
 * {
-  margin: auto;
-  padding: 0;
+  margin:auto;
+  padding:auto;
 }
-
-/*  navbar  */
 
 .head-bar-container {
   background-color: rgb(36, 36, 36);
@@ -23,6 +21,8 @@
   position: relative;
   align-items: center;
   top: 0;
+  position: fixed;
+  width: 100vw;
 }
 
 @media screen and (max-width: 500px) {
@@ -59,8 +59,9 @@
 }
 
 #logo-home-nav {
-  width: 60px;
+  width: 150px;
   margin: 0;
+  padding: 0;
 }
 
 #input-text {

@@ -15,24 +15,27 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="icon" href="https://media.discordapp.net/attachments/831821330042060820/935354015431163974/Adobe-AMZ-PR.png?width=591&height=591">
+    <link
+      rel="icon"
+      href="https://media.discordapp.net/attachments/831821330042060820/935354015431163974/Adobe-AMZ-PR.png?width=591&height=591"
+    />
     <link rel="stylesheet" href="./CSS/NavBar.css" />
     <link rel="stylesheet" href="./CSS/Member.css" />
     <script src="./JavaScript/Home.js"></script>
+    <script src="./JavaScript/TestScript.js"></script>
   </head>
-  <body id="member-page">
+  <body id="member-page" onload="timeServer()">
     <div class="head-bar-container">
-      <a class="nav-header" href="Home.html" target="_blank"
+      <a href="Home.html" target="_blank"
         ><img
-          id="logo-home-nav" 
-          src="https://media.discordapp.net/attachments/831821330042060820/935354015431163974/Adobe-AMZ-PR.png?width=591&height=591" 
+          id="logo-home-nav"
+          src="https://media.discordapp.net/attachments/863446092241436687/928471180954959933/Amz1_LOGOv.1.1.png"
           alt=""
-        ></a
-      >
-      <a class="nav-header" href="Portfolio.html" target="_blank"
+      /></a>
+      <a class="nav-header" href="index_Port.html" target="_blank"
         >Portfolio
       </a>
-      <a class="nav-header" href="#">Photo</a>
+      <a class="nav-header" href="#">Art</a>
       <a class="nav-header" href="#">Video</a>
       <a class="nav-header" href="Member.html" target="_blank">Member</a>
       <a class="nav-header" href="index_2.html">For Developer</a>
@@ -44,7 +47,9 @@
           placeholder="Search"
         />
       </form>
-      <button class="btn btn-success" id="btn-theme" onclick="theme()">Theme</button>
+      <button class="btn btn-success" id="btn-theme" onclick="theme()">
+        Theme
+      </button>
     </div>
     <!--Main Body-->
     <div class="box-container">
@@ -183,8 +188,61 @@
           </div>
         </div>
       </div>
-      <div class="box-4"></div>
+      <div class="box">
+        <div class="header-cover">
+          <img
+            class="img-box"
+            src="https://media.discordapp.net/attachments/428784556535971841/934652207222112326/S69_Gen1.jpg?width=1060&height=596"
+            alt=""
+          />
+        </div>
+        <div class="text-info-con">
+          <h1 class="text-info-head">Famzaneko</h1>
+          <p class="text-info-paragraph"></p>
+        </div>
+        <div class="logo-contact-footer">
+          <div class="img-logo-footer">
+            <a href=""
+              ><img
+                class="logo"
+                id="twitter"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/768px-Twitter-logo.svg.png?20211104142029"
+                alt=""
+            /></a>
+            <a href="https://web.facebook.com/EarthX99/"
+              ><img
+                class="logo"
+                src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"
+                alt=""
+            /></a>
+            <a href=""
+              ><img
+                class="logo"
+                id="youtube"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/239px-YouTube_full-color_icon_%282017%29.svg.png?20211015074811"
+                alt=""
+            /></a>
+            <a href="https://steamcommunity.com/profiles/76561198286204116/"
+              ><img
+                class="logo"
+                src="https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
     </div>
+    <footer class="footer-data">
+        <div class="footer-credit">
+          <h3 class="footer-data-credit">Develop by EarthStrix</h3>
+          <h3 class="footer-data-credit">Logo Design by SilviaXRX</h3>
+        </div>
+        <div class="footer-credit">
+          <h3 class="footer-data-credit" align="center" style="color:white">
+            &copy; Copyright AMz_1 Studio 2022
+          </h3>
+        </div>
+      </footer>
     <script src="./JavaScript/Home.js"></script>
   </body>
 </html>
