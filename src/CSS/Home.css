@@ -23,9 +23,9 @@
   margin-top: 17rem;
   margin-bottom: 15rem;
   border: 2px solid white;
-  border-radius: 12px;
+  border-radius: 1.50rem;
   padding: 4rem;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.294);
 }
 
 p#text-caption-p {
