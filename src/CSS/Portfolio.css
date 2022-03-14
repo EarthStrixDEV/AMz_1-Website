@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Kanit:wght@300&display=swap');
+
+:root {
+    --display-block: block;
+    --margin-main: 10rem;
+}
+
+* {
+    font-family: 'Itim', cursive;
+}
+
+.main-container {
+    margin-top: var(--margin-main);
+    margin-bottom: var(--margin-main);
+}
+
+.side-bar {
+    width: 360px;
+    height: 100%;
+    border: solid -0.75px rgba(50, 50 ,50);
+    border-radius: 0.75rem;
+    box-shadow: 3px 3px 8px rgba(31, 31, 31, 0.459);
+    margin: 90px;
+}   
+
+.name-side-bar {
+    text-align: center;
+    font-family: 'Hubballi', cursive;
+}
+
+.form-control {
+    font-size: 1.5em;
+}
+
+.from-check {
+    display: block;
+}

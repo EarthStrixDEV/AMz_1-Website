@@ -1,5 +1,6 @@
+const btn = document.createElement('button');
+
 const createButton = () =>
 {
-    let btn = document.createElement('button');
-    
+    btn.setAttribute('on', 'click');
 }

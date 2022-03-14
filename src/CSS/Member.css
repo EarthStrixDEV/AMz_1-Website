@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Kanit:wght@300&display=swap');
+
+:root {
+    --font-size: 3rem;   
+}
+
 * {
     box-sizing: border-box;
     justify-content: center;
     flex-direction: row;
     align-items: center;
+    font-family: 'Itim', cursive;
 }
 
 .box-container {
@@ -41,7 +48,6 @@
 }
 
 .text-info-head {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
     margin:20px;
     text-align: center;
@@ -52,7 +58,6 @@
     text-align: center;
     color:black;
     font-size: 18px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .logo-contact-footer {
