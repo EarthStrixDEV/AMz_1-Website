@@ -1,6 +1,7 @@
-const btn = document.createElement('button');
+var root = document.querySelector('.root');
+var btn = document.createElement('button');
 
-const createButton = () =>
-{
-    btn.setAttribute('on', 'click');
-}
+function createButton() {
+    btn.innerHTML = "click";
+    root.appendChild(btn);
+};
