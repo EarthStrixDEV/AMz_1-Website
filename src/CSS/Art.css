@@ -4,10 +4,12 @@
 :root {
     --display-block: block;
     --margin-main: 10rem;
+    --font-main: 'prompt';
 }
 
 * {
     font-family: 'Itim', cursive;
+    color: rgb(56, 56, 56);
 }
 
 .main-container {
@@ -28,7 +30,7 @@
 .name-side-bar {
     padding-top: 20px;
     text-align: center;
-    font-family: 'Hubballi', cursive;
+    font-family: var(--font-main);
     font-weight: bolder;
 }
 
