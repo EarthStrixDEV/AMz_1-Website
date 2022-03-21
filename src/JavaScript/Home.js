@@ -13,7 +13,7 @@ var element_nav = {
 var console_log = {
   log_1: console.log(element_nav.footer_font),
   log_2: console.log(element_nav.h1_background_div),
-  log_3: console.log(element_nav.h1_background_span)
+  log_3: console.log(element_nav.h1_background_span),
 };
 
 //Function Control
