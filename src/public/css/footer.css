@@ -67,7 +67,6 @@ label {
 .tech-web {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .tech-web img {

@@ -10,6 +10,10 @@ router.get('/member', (req, res) => {
     res.render('Member');
 })
 
+router.get('/login', (req, res) => {
+    res.render('login');
+})
+
 router.get('/home', (req, res) => {
     res.redirect('/');
 })

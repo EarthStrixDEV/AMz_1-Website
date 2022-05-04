@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    border-radius: 35px;
+    box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.062), -7px -7px 30px rgba(0, 0, 0, 0.062);
+}
+
+.container h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-co {
+    padding-bottom: 1rem;
+}
+
+#exampleFormControlInput1,
+#exampleFormControlTextarea1 {
+    width: 30rem;
+    height: 3rem;
+}
