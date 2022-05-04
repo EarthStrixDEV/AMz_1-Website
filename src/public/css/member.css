@@ -1,0 +1,56 @@
+:root {
+    --font-main-color: rgb(55, 0, 255);
+    --font-style-nav: 'Poppins', sans-serif;
+    --font-family-main: 'Staatliches', cursive;
+    --font-size: 25px;
+    --box-shadow: 5px 5px 15px rgb(38, 0, 255);
+    --border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 6rem;
+    margin-bottom: 10rem;
+}
+
+.box {
+    width: 440px;
+    height: 100%;
+    border: none;
+    border-radius: 60px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.187);
+    overflow: hidden;
+}
+
+.box .img-cover img {
+    width: 100%;
+    height: 100%;
+}
+
+.box .text-info {
+    margin: 0 auto;
+    padding: 1.25em;
+    white-space:pre-line;
+}
+
+.box .text-info h1 {
+    text-shadow: 2px 2px 7px skyblue;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-info .fa {
+    padding: 20px;
+    font-size: 60px;
+    text-align: center;
+    text-decoration: none;
+}

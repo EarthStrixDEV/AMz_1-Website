@@ -1,1 +1,0 @@
-nt_footer_font_control;
