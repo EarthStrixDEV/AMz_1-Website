@@ -22,6 +22,7 @@
 
 #exampleFormControlInput1,
 #exampleFormControlTextarea1 {
+    font-size: 25px;
     width: 30rem;
     height: 3rem;
 }
