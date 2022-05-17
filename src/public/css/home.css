@@ -11,7 +11,6 @@
     align-items: center;
     margin-bottom: 3rem;
     padding-bottom: 3rem; 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.096);
 }
 
 .text {
@@ -48,6 +47,7 @@
 
 .info-container {
     margin-top: 3rem;
+    padding-bottom: 4rem;
 }
 
 .box-info {
@@ -73,4 +73,49 @@
     width: 960px;
     height: 100%;
 }
+
+.video-from-youtube {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 5rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 960px;
+    border-radius: 30px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.096) ,-4px -4px 30px rgba(0, 0, 0, 0.096);
+}
+
+.video-from-youtube h2 {
+    text-align: center;
+    font-family: var(--font-style-nav);
+    font-weight: bolder;
+    font-size: 45px;
+    padding: 1.75rem;
+}
+
+.video-box {
+    padding: 20px;
+    margin: 2.5rem;
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.096) ,-3px -3px 30px rgba(0, 0, 0, 0.096);
+    border-radius: 30px;
+    height: 1024px;
+}
+
+.video-box iframe {
+    width: 1024px;
+    height: 540px;
+    margin-bottom: 2rem;
+}
+
+.video-box h4 {
+    font-family: var(--font-style-nav);
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 2rem;
+}
+
+
 
