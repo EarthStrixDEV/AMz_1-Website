@@ -1,0 +1,37 @@
+:root {
+    --font-main-color: rgb(55, 0, 255);
+    --font-color-gray: rgba(0, 0, 0, 0.651);
+    --font-style-nav: 'Poppins', sans-serif;
+    --font-family-main: 'Staatliches', cursive;
+    --font-size: 25px;
+    --box-shadow: 0px -5px 30px rgba(0, 0, 0, 0.144);
+    --border-bottom: 1px solid rgba(0, 0, 0, 0.055);
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    padding: 6rem;
+}
+
+b {
+    font-family: var(--font-style-nav);
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+#exampleFormControlInput1 {
+    width: 50%;
+    height: 50px;
+    padding: 0.5rem;
+    font-size: 25px;
+}
+
+.btn-register {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
