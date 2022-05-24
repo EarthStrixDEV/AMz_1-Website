@@ -8,8 +8,6 @@ router.get('/', (req, res) => {
 
 router.get('/home', (req, res) => {
     res.render('home');
-    let para_id = req.params.id;
-    console.log(para_id);
 });
 
 router.get('/member', (req, res) => {
@@ -22,6 +20,10 @@ router.get('/login', (req, res) => {
 
 router.get('/register', (req, res) => {
     res.render('register');
+})
+
+router.get('/manage', (req, res) => {
+    res.render('manage');
 })
 
 router.get('/home', (req, res) => {

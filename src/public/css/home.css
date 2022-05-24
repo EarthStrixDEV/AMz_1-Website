@@ -83,7 +83,8 @@
     overflow-y: scroll;
     overflow-x: hidden;
     height: 960px;
-    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
     box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.096) ,-4px -4px 30px rgba(0, 0, 0, 0.096);
 }
 
