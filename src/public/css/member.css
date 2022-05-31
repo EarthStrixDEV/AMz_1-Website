@@ -7,21 +7,28 @@
     --border-bottom: 1px solid rgb(0, 0, 0);
 }
 
-.container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+.owl-carousel {
+    max-width: 1500px;
+    max-height: 100%;
+    margin: 0 auto;
     margin-top: 6rem;
     margin-bottom: 10rem;
 }
 
 .box {
-    width: 440px;
+    width: 390px;
     height: 100%;
+    margin-bottom: 20px;
+    margin-left: 10px;
     border: none;
-    border-radius: 60px;
-    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.187);
+    border-radius: 50px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.187) ,-5px -5px 12px rgb(255, 255, 255);
     overflow: hidden;
 }
 
@@ -53,4 +60,28 @@
     font-size: 60px;
     text-align: center;
     text-decoration: none;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.text strong {
+    font-size: 35px;
+    font-family: var(--font-style-nav);
+    font-weight: bolder;
+    text-align: center;
+    margin: 3rem;
+}
+
+.text p {
+    font-size: 20px;
+    font-family: var(--font-style-nav);
+    font-weight: 700;
+    text-align: center;
+    margin: 1.5rem;
 }
