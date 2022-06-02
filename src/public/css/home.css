@@ -23,11 +23,11 @@
     text-align: center;
     font-family: var(--font-style-nav);
     font-weight: bolder;
-    font-size: 120px;
+    font-size: 110px;
 }
 
 .text b {
-    padding-top: 20px;
+    padding-top: 18px;
     line-height: 60px;
     text-align: center;
     font-family: var(--font-style-nav);
@@ -46,8 +46,8 @@
 }
 
 .info-container {
-    margin-top: 3rem;
-    padding-bottom: 4rem;
+    margin-top: 2.75rem;
+    padding-bottom: 3.75rem;
 }
 
 .box-info {
@@ -78,11 +78,11 @@
     display : flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 18px;
     margin-top: 5rem;
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 960px;
+    height: 900px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.096) ,-4px -4px 30px rgba(0, 0, 0, 0.096);
@@ -97,11 +97,11 @@
 }
 
 .video-box {
-    padding: 20px;
+    padding: 18px;
     margin: 2.5rem;
     box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.096) ,-3px -3px 30px rgba(0, 0, 0, 0.096);
     border-radius: 30px;
-    height: 1024px;
+    height: 980px;
 }
 
 .video-box iframe {

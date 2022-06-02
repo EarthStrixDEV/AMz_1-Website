@@ -43,11 +43,11 @@
         </div>
         <div class="box">
             <div class="img-cover">
-                <img src="img/S69_Gen1.jpg" alt="" srcset="">
+                <img src="img/famzaneko_Baner youtube.png" alt="" srcset="">
             </div>
             <div class="text-info">
-                <h1>SilviaXRX</h1>
-                <p>SilviaXRK | 18  | Furry-anthro Artist | SFW/NSFW | EN/TH | R6 Player |</p>
+                <h1>Famzaneko</h1>
+                <p>Hello my name is fam | 19 year old male | Likes to draw and play games and listen to all kinds of </p>
             </div>
             <div class="footer-info">
                 <a href="#" class="fa fa-facebook"></a>
@@ -55,25 +55,28 @@
                 <a href="#" class="fa fa-youtube"></a>
             </div>
         </div>
-        <div class="box">
-            <div class="img-cover">
-                <img src="img/S69_Gen1.jpg" alt="" srcset="">
+        <% Object.values(data).forEach((item) => { %>
+            <div class="box">
+                <div class="img-cover">
+                    <img src="<%= item.cover %>" alt="" srcset="">
+                </div>
+                <div class="text-info">
+                    <h1><%= item.name %></h1>
+                    <p><%= item.description %></p>
+                </div>
+                <div class="footer-info">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
             </div>
-            <div class="text-info">
-                <h1>SilviaXRX</h1>
-                <p>SilviaXRK | 18  | Furry-anthro Artist | SFW/NSFW | EN/TH | R6 Player |</p>
-            </div>
-            <div class="footer-info">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-youtube"></a>
-            </div>
+        <%})%>
         </div>
     </div>
     <hr>
     <div class="text">
-        <strong id="text-strong">click here</strong>
-        <p id="text-p-descript">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod a consequatur, accusamus suscipit consectetur fugiat quam. Explicabo alias numquam perspiciatis nesciunt porro nobis consectetur, adipisci eveniet! Rerum nemo ratione vitae!</p>
+        <button id="text-strong">click here</button>
+        <p id="text-p-descript">Slider Bar animation with Owl-Caroursal.js</p>
     </div>
     <%- include('footer') %>
     <%- include('script') %>

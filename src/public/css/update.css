@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+form {
+    margin: 0 auto;
+}
+
+form .form-control {
+    width: 50%;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+form button, a{
+    width: 50%;
+    height: 50px;
+    margin-bottom: 20px;
+}
