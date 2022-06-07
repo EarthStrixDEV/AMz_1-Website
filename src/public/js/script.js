@@ -1,7 +1,7 @@
 $(document).ready(function () {
     // Initialize the jQuery File Upload widget:
     $(".owl-carousel").owlCarousel({
-        items: 4,
+        items: 3,
         loop: true,
         autoplay: true,
         autoplayTimeout: 2500,
@@ -27,5 +27,21 @@ $(document).ready(function () {
 
     $('#text-strong').on('click', function () {
         $('#text-p-descript').toggle();
+    });
+
+    $('body').loopedslider({
+        autoHeight: true,
+        transition: 'fade',
+        transitionSpeed: 1000,
+        autoPlay: true,
+        autoPlayDelay: 5000,
+        pauseOnHover: true,
+        showPreviousNext: true,
+        showNav: true,
+        navPositionTop: '0px',
+        navPositionLeft: '0px',
+        navPositionRight: '0px',
+        navPositionBottom: '0px',
+        navButtons: true,
     });
 });

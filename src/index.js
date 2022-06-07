@@ -15,7 +15,7 @@ app.listen(port, () => {
     console.log("Server is running on port " + port)
 }).on('error', (err) => {
     if (err) {
-        console.log(`error server: ${err}`)
+        console.log(`server error => : ${err}`)
     } else {
         console.log("Server is running on port " + port)
     }

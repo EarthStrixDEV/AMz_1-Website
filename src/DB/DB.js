@@ -7,7 +7,7 @@ mongoose.connect(mongoDB, {
     useUnifiedTopology: true,
     family: 4,
 }).catch(err => {
-    console.log(`Error: ${err}`)
+    console.log(`DB err => : ${err}`)
 }).then(() => {
     console.log("Connected to mongodb")
 })

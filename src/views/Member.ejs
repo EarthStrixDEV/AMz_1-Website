@@ -12,67 +12,34 @@
 </head>
 <body>
     <%- include('nav') %>
-    <div class="owl-carousel">
-        <div class="box">
-            <div class="img-cover">
-                <img src="img/banner_ED.png" alt="" srcset="">
-            </div>
-            <div class="text-info">
-                <h1>EarthStrix</h1>
-                <p>Programer ,Developer & Media Creator | 19 Year | JavaScript Python </p>
-            </div>
-            <div class="footer-info">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-youtube"></a>
-            </div>
-        </div>
-        <div class="box">
-            <div class="img-cover">
-                <img src="img/S69_Gen1.jpg" alt="" srcset="">
-            </div>
-            <div class="text-info">
-                <h1>SilviaXRX</h1>
-                <p>SilviaXRK | 18  | Furry-anthro Artist | SFW/NSFW | EN/TH | R6 Player |</p>
-            </div>
-            <div class="footer-info">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-youtube"></a>
-            </div>
-        </div>
-        <div class="box">
-            <div class="img-cover">
-                <img src="img/famzaneko_Baner youtube.png" alt="" srcset="">
-            </div>
-            <div class="text-info">
-                <h1>Famzaneko</h1>
-                <p>Hello my name is fam | 19 year old male | Likes to draw and play games and listen to all kinds of </p>
-            </div>
-            <div class="footer-info">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-youtube"></a>
-            </div>
-        </div>
-        <% Object.values(data).forEach((item) => { %>
-            <div class="box">
-                <div class="img-cover">
-                    <img src="<%= item.cover %>" alt="" srcset="">
+    <% if (data) { %>
+        <div class="owl-carousel">
+            <% Object.values(data).forEach((item) => { %>
+                <div class="box">
+                    <div class="img-cover">
+                        <img src="../public/uploads/<%= item.cover %>" alt="" />
+                    </div>
+                    <div class="text-info">
+                        <h1><%= item.name %></h1>
+                        <p><%= item.description %></p>
+                    </div>
+                    <div class="footer-info">
+                        <a href="<%= item.link[0] %>" class="fa fa-facebook"></a>
+                        <a href="<%= item.link[1] %>" class="fa fa-twitter"></a>
+                        <a href="<%= item.link[2] %>" class="fa fa-youtube"></a>
+                    </div>
                 </div>
-                <div class="text-info">
-                    <h1><%= item.name %></h1>
-                    <p><%= item.description %></p>
-                </div>
-                <div class="footer-info">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-youtube"></a>
+            <%})%>
+        </div>
+    <%} else { %>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>No Data</h1>
                 </div>
             </div>
-        <%})%>
         </div>
-    </div>
+    <%}%>
     <hr>
     <div class="text">
         <button id="text-strong">click here</button>

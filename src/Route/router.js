@@ -8,11 +8,11 @@ const multer = require('multer');
 const storage = multer.diskStorage({
     // create folder uploads in public folder
     destination: function (req, file, cb) {
-        cb(null, './public/img/uploads/')
+        cb(null, './public/uploads');
     },
     // rename file 
     filename: function (req, file, cb) {
-        cb(null, Date.now() + ".jpg")
+        cd(null, file.originalname);
     }
 })
 
@@ -30,7 +30,7 @@ router.get('/member', (req, res) => {
     // pull data from mongodb and send to view
     DB.find().exec((err, data) => {
         if (err) {
-            console.log(err);
+            console.log('server error => : ' + err)
         } else {
             res.render('Member', { data: data });
         }
@@ -47,31 +47,68 @@ router.post('/getData', uploads.single('cover'), (req, res) => {
         name: req.body.name,
         description: req.body.description,
         cover: req.body.cover,
-        link: req.body.link,
+        link: req.body.link
     });
+
     // save data to mongodb and send to view
-    DB.saveMember(data, (err, data) => {
+    DB.saveMember(data, (err) => {
         if (err) {
-            console.log(err);
+            console.log('server error => : ' + err)
         } else {
-            console.log(data);
-            res.redirect('register');
+            res.redirect('/');
         }
-    });
+    })
 })
 
 router.get('/manage', (req, res) => {
     DB.find().exec((err, data) => {
         if (err) {
-            console.log(err);
+            console.log('server error => : ' + err)
         } else {
             res.render("manage", { data: data });
         }
     });
 })
 
-router.get('/update', (req, res) => {
-    res.render('update');
+
+router.post('/updateData', (req, res) => {
+    const edit_id = req.body.edit_id;
+    console.log(edit_id);
+    DB.findOne({ _id: edit_id }).exec((err, data) => {
+        if (err) {
+            console.log('server error => : ' + err)
+        } else {
+            console.log(data);
+            res.render('update', { data: data });
+        }
+    });
+})
+
+router.post('/updated', (req, res) => {
+    const update_id = req.body.update_id;
+    let data = {
+        name: req.body.name,
+        description: req.body.description,
+        cover: req.body.cover,
+        link: req.body.link,
+    };
+    DB.findByIdAndUpdate(update_id , data, {useFindAndModify:false}).exec((err) => {
+        if (err) {
+            console.log('server error => : ' + err)
+        } else {
+            res.redirect('manage');
+        }
+    });
+})
+
+router.get('/delete/:id', (req, res) => {
+    DB.findByIdAndDelete(req.params.id,{useFindAndModify : false}).exec(err => {
+        if (err) {
+            console.log('server error => : ' + err);
+        } else {
+            res.redirect('manage');
+        }
+    })
 })
 
 module.exports = router;
