@@ -24,6 +24,38 @@
     font-family: var(--font-style-nav);
     font-weight: bolder;
     font-size: 110px;
+    animation: color-loop 5s infinite ease-in-out;
+}
+
+@keyframes color-loop {
+    0% {
+        color: #7c00ef;
+        text-shadow: 0 0 20px #7c00ef;
+    }
+    25% {
+        color: #ff0000;
+        text-shadow: 0 0 20px #ff0000;
+    }
+    50% {
+        color: #01e742;
+        text-shadow: 0 0 20px #01e742;
+    }
+    100% {
+        color: #ff04c0;
+        text-shadow: 0 0 20px #ff04c0;
+    }
+    125% {
+        color: #330aff;
+        text-shadow: 0 0 20px #330aff;
+    }
+    150% {
+        color: #02ddfa;
+        text-shadow: 0 0 20px #02ddfa;
+    }
+    175% {
+        color: #f6ff00;
+        text-shadow: 0 0 20px #f6ff00;
+    }
 }
 
 .text b {

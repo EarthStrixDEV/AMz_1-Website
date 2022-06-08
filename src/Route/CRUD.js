@@ -18,14 +18,6 @@ const storage = multer.diskStorage({
 
 const uploads = multer({ storage: storage })
 
-router.get('/', (req, res) => {
-    res.render('welcome');
-});
-
-router.get('/home', (req, res) => {
-    res.render('home');
-});
-
 router.get('/member', (req, res) => {
     // pull data from mongodb and send to view
     DB.find().exec((err, data) => {
@@ -35,10 +27,6 @@ router.get('/member', (req, res) => {
             res.render('Member', { data: data });
         }
     });
-})
-
-router.get('/register', (req, res) => {
-    res.render('register');
 })
 
 router.post('/getData', uploads.single('cover'), (req, res) => {
@@ -67,9 +55,8 @@ router.get('/manage', (req, res) => {
         } else {
             res.render("manage", { data: data });
         }
-    });
+    })
 })
-
 
 router.post('/updateData', (req, res) => {
     const edit_id = req.body.edit_id;
@@ -81,7 +68,7 @@ router.post('/updateData', (req, res) => {
             console.log(data);
             res.render('update', { data: data });
         }
-    });
+    })
 })
 
 router.post('/updated', (req, res) => {
